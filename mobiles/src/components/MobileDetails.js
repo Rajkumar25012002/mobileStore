@@ -25,7 +25,7 @@ function MobileDetails() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     axios
-      .post("https://mobile-backend-kjlm.onrender.com/add", {
+      .post("https://mobile-store-backend.onrender.com/add", {
         productId,
         brand,
         model,

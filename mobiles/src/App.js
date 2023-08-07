@@ -14,7 +14,7 @@ function App() {
   const [cartData, setCartData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://mobile-backend-kjlm.onrender.com/")
+      .get("https://mobile-store-backend.onrender.com/")
       .then((response) => JSON.stringify(response.data.allDetails))
       .then((data) => setCartData(JSON.parse(data))).then(setCartLen(cartData.length));
   });

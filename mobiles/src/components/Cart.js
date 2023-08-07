@@ -15,7 +15,7 @@ function CartMap({ item }) {
     setValue((v) => v + 1);
     const handleAdd = async (event) => {
       await axios
-        .put("https://mobile-backend-kjlm.onrender.com/updateAdd", { _id, value, price })
+        .put("https://mobile-store-backend.onrender.com/updateAdd", { _id, value, price })
         .catch((error) => {
           console.error("Error:", error);
         });
@@ -27,7 +27,7 @@ function CartMap({ item }) {
     setValue((v) => v - 1);
     const handleSub = async (event) => {
       await axios
-        .put("https://mobile-backend-kjlm.onrender.com/updateSub", { _id, value, price })
+        .put("https://mobile-store-backend.onrender.com/updateSub", { _id, value, price })
         .catch((error) => {
           console.error("Error:", error);
         });
@@ -37,7 +37,7 @@ function CartMap({ item }) {
 
   const handleRemove = async (event) => {
     await axios
-      .put("https://mobile-backend-kjlm.onrender.com/remove", { _id })
+      .put("https://mobile-store-backend.onrender.com/remove", { _id })
       .then((data) => console.log(data))
       .catch((error) => {
         console.error("Error:", error);
