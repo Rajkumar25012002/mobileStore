@@ -39,7 +39,7 @@ A standout feature of this project is the shopping cart functionality. Key highl
 
 ## Demo
 
-Check out the live demo of the Mobile Store web application [here](https://rockysmobiles.netlify.app).
+Check out the live demo of the Mobile Store web application [here](https://rockymobiles.netlify.app).
 
 ## Contact
 
